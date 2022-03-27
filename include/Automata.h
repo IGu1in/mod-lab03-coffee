@@ -10,11 +10,7 @@ class Automata {
  private:
   States state;
   int cash;
-  string menu[3] = {
-   "Espresso",
-   "Latte",
-   "Cacao"
-  };
+  string menu[3] = {"Espresso", "Latte", "Cacao"};
   int price[3] = {80, 110, 70};
  public:
   Automata();
