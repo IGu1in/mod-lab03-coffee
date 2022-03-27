@@ -25,7 +25,7 @@ TEST(test2, index_1) {
 TEST(test3, check_true) {
   Automata machine = Automata();
   machine.on();
-  machine.coin(100);
+  machine.coin(150);
   int index = machine.choice("Latte");
   bool res = machine.check(index);
   EXPECT_EQ(true, res);
@@ -43,9 +43,9 @@ TEST(test4, check_false) {
 TEST(test5, logic_error) {
   Automata machine = Automata();
   try {
-   machine.off();
+  machine.off();
   }
   catch(logic_error err) {
-   ASSERT_STREQ("Error, invalid operation", err.what());
+  ASSERT_STREQ("Error, invalid operation", err.what());
   }
 }
