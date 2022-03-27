@@ -68,8 +68,7 @@ bool Automata::check(int index) {
     if (state == Check) {
         if (cash >= price[index]) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     } else {
@@ -101,8 +100,7 @@ void Automata::finish() {
         state = Wait;
         cout << "You have" << cash << "money" << endl;
         getState();
-    }
-    else {
+    } else {
         throw logic_error("Error! Incorrect operation.");
     }
 }
